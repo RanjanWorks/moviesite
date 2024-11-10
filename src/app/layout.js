@@ -1,6 +1,6 @@
 import Footer from "@/Components/Footer";
 import Header from "../Components/Header";
-import NextTopLoader from "nextjs-toploader";
+
 import { Toaster } from "@/components/ui/toaster"
 
 import "./globals.css";
@@ -35,9 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body className="bg-zinc-950 ">
-        <NextTopLoader 
-        color="white"
-        />
+     
         <Header />
         {children}
         <Toaster />
